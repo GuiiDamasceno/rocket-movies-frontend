@@ -1,8 +1,49 @@
-# React + Vite
+<h1 align="center"> RocketMovies </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-Currently, two official plugins are available:
+<p>
+  Projeto de front end usando React. Aplicação para acompanhar todas os filmes que assistiu. No site é possível se cadastrar e adicionar o filme e em cada um deles colocar título, rating(nota), descrição e tags.
+  Também é possível editar o perfil cadastrado e se necessário excluir um filme.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+<br>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- ViteJS;
+- JavaScript;
+- ReactJS.
+
+<br>
+<br>
+
+## 🔖 Layout
+### Página de SingIn:
+![prewiew](./.github/SignIn.png)
+##
+### Página de SingUp:
+![prewiew](./.github/SignUp.png)
+##
+### Página de Home:
+![prewiew](./.github/Home.png)
+##
+### Página de Novos Filmes:
+![prewiew](./.github/NewMovie.png)
+##
+### Página de Perfil:
+![prewiew](./.github/Profile.png)
+##
+### Página de Detalhes dos filmes:
+![prewiew](./.github/Movie.png)
+
+## 
+  <p align="center">
+    Desenvolvido por: Guilherme Damasceno
+  </p>
