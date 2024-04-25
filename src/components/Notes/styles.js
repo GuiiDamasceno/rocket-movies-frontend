@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const Container = styled.button`
-  display: flex;
-  flex-direction: column;
-
   width: 100%;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PINK};
 
   border: none;
   border-radius: 16px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 
   padding: 32px;
   margin-bottom: 16px;
@@ -31,6 +31,11 @@ export const Container = styled.button`
 
   p{
     color: ${({ theme }) => theme.COLORS.GRAY_200};
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   footer{

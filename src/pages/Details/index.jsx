@@ -74,9 +74,9 @@ export function Details() {
               <p dateTime={data.created_at}>{data.created_at}</p>
             </Writer>
 
-            <p>
+            <div className="descript">
               {data.description}
-            </p>
+            </div>
 
             <Section>
               <Tags>

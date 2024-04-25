@@ -42,8 +42,9 @@ export function Home() {
 
       <Header onSearch={handleSearch} />
 
+    <div className="app">
 
-      <section title="Meus Filmes">
+      <section>
         <h1>Meus Filmes</h1>
 
         <NewMovie to="/new">
@@ -63,6 +64,7 @@ export function Home() {
           ))
         }
       </main>
+    </div>
 
     </Container>
   )

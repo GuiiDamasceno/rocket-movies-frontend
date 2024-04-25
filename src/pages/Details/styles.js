@@ -2,12 +2,41 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 95vh;
 
   margin-bottom: 30px;
 
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "content";
+
+  >main{
+    padding: 0 40px;
+
+    grid-area: content;
+    overflow-y: auto;
+    
+    .descript{
+    display: -webkit-box;
+    overflow-wrap: break-word;
+    -webkit-box-orient: vertical;
+  }
+  }
+
+  > main::-webkit-scrollbar {
+    width: 8px;
+    }
+  
+  > main::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    border-radius: 8px;
+  }
+
   @media(min-width: 700px){
     main{
+      grid-area: content;
+
       width: 100%;
       max-width: 1137px;
 
@@ -16,18 +45,8 @@ export const Container = styled.div`
       grid-area: content;
       overflow-y: auto;
       padding: 34px 10px;
-    }
-
-     main::-webkit-scrollbar {
-      width: 8px;
-    
-    }
-    
-     main::-webkit-scrollbar-thumb {
-      background-color: ${({ theme }) => theme.COLORS.PINK};
-      border-radius: 8px;
-    }
   }
+}
 
 `
 
@@ -94,8 +113,6 @@ export const Writer = styled.div`
     height: 20px;
 
     border-radius: 50%;
-
-
   }
 
   >svg{

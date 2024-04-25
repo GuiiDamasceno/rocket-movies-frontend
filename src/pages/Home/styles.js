@@ -3,45 +3,63 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
+
   text-decoration: none;
   color: ${({ theme }) => theme.COLORS.WHITE};
-  
-  >main{
-    padding: 0 40px;
-    height: 100vh;
-    overflow-y: auto;
-  }
 
-  > main::-webkit-scrollbar {
-    width: 8px;
-    }
-  
-  > main::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.PINK};
-    border-radius: 8px;
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "head"
+  "content";
+
+  .app{
+    padding: 0 40px;
+    
+    height: 85vh;
+
+    -webkit-box-orient: vertical;
+    overflow-x: hidden;
+    
   }
 
   section{
+    grid-area: head;
     width: 100%;
-    padding: 40px;
+    padding: 40px 0;
     display: flex;
 
     align-items: center;
     justify-content: space-between;
   }
 
+  main{
+    height: 70vh;
+    overflow-y: auto;
+    padding: 0 20px 0 0;
+  }
+
+
+  main::-webkit-scrollbar {
+    width: 8px;
+    }
+  
+  main::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.COLORS.PINK};
+    border-radius: 8px;
+  }
+
   @media(min-width: 700px){
 
-    >section{
+    section{
       width: 100%;
       max-width: 1137px;
 
       margin: 0 auto;
     }
     
-    > main{
+    main{
       width: 100%;
-      height: 100vh;
       
       overflow-y: auto;
       max-width: 1137px;
